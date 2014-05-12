@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C24D4AB1920C5610091C044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C24D4AA1920C5610091C044 /* Foundation.framework */; };
+		8C24D4AD1920C5610091C044 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C24D4AC1920C5610091C044 /* CoreGraphics.framework */; };
+		8C24D4AF1920C5610091C044 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C24D4AE1920C5610091C044 /* UIKit.framework */; };
+		8C24D4B51920C5610091C044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C24D4B31920C5610091C044 /* InfoPlist.strings */; };
+		8C24D4B71920C5610091C044 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C24D4B61920C5610091C044 /* main.m */; };
+		8C24D4BB1920C5610091C044 /* ITHSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C24D4BA1920C5610091C044 /* ITHSAppDelegate.m */; };
+		8C24D4BE1920C5610091C044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C24D4BC1920C5610091C044 /* Main.storyboard */; };
+		8C24D4C11920C5610091C044 /* ITHSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C24D4C01920C5610091C044 /* ITHSViewController.m */; };
+		8C24D4C31920C5610091C044 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C24D4C21920C5610091C044 /* Images.xcassets */; };
+		8C24D4CA1920C5610091C044 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C24D4C91920C5610091C044 /* XCTest.framework */; };
+		8C24D4CB1920C5610091C044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C24D4AA1920C5610091C044 /* Foundation.framework */; };
+		8C24D4CC1920C5610091C044 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C24D4AE1920C5610091C044 /* UIKit.framework */; };
+		8C24D4D41920C5610091C044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C24D4D21920C5610091C044 /* InfoPlist.strings */; };
+		8C24D4D61920C5610091C044 /* PostnrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C24D4D51920C5610091C044 /* PostnrTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C24D4CD1920C5610091C044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C24D49F1920C5610091C044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C24D4A61920C5610091C044;
+			remoteInfo = Postnr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C24D4A71920C5610091C044 /* Postnr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postnr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C24D4AA1920C5610091C044 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C24D4AC1920C5610091C044 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8C24D4AE1920C5610091C044 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8C24D4B21920C5610091C044 /* Postnr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Postnr-Info.plist"; sourceTree = "<group>"; };
+		8C24D4B41920C5610091C044 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C24D4B61920C5610091C044 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C24D4B81920C5610091C044 /* Postnr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Postnr-Prefix.pch"; sourceTree = "<group>"; };
+		8C24D4B91920C5610091C044 /* ITHSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITHSAppDelegate.h; sourceTree = "<group>"; };
+		8C24D4BA1920C5610091C044 /* ITHSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITHSAppDelegate.m; sourceTree = "<group>"; };
+		8C24D4BD1920C5610091C044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C24D4BF1920C5610091C044 /* ITHSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITHSViewController.h; sourceTree = "<group>"; };
+		8C24D4C01920C5610091C044 /* ITHSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITHSViewController.m; sourceTree = "<group>"; };
+		8C24D4C21920C5610091C044 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8C24D4C81920C5610091C044 /* PostnrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostnrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C24D4C91920C5610091C044 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8C24D4D11920C5610091C044 /* PostnrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PostnrTests-Info.plist"; sourceTree = "<group>"; };
+		8C24D4D31920C5610091C044 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C24D4D51920C5610091C044 /* PostnrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostnrTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C24D4A41920C5610091C044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C24D4AD1920C5610091C044 /* CoreGraphics.framework in Frameworks */,
+				8C24D4AF1920C5610091C044 /* UIKit.framework in Frameworks */,
+				8C24D4AB1920C5610091C044 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C24D4C51920C5610091C044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C24D4CA1920C5610091C044 /* XCTest.framework in Frameworks */,
+				8C24D4CC1920C5610091C044 /* UIKit.framework in Frameworks */,
+				8C24D4CB1920C5610091C044 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C24D49E1920C5610091C044 = {
+			isa = PBXGroup;
+			children = (
+				8C24D4B01920C5610091C044 /* Postnr */,
+				8C24D4CF1920C5610091C044 /* PostnrTests */,
+				8C24D4A91920C5610091C044 /* Frameworks */,
+				8C24D4A81920C5610091C044 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C24D4A81920C5610091C044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C24D4A71920C5610091C044 /* Postnr.app */,
+				8C24D4C81920C5610091C044 /* PostnrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C24D4A91920C5610091C044 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C24D4AA1920C5610091C044 /* Foundation.framework */,
+				8C24D4AC1920C5610091C044 /* CoreGraphics.framework */,
+				8C24D4AE1920C5610091C044 /* UIKit.framework */,
+				8C24D4C91920C5610091C044 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C24D4B01920C5610091C044 /* Postnr */ = {
+			isa = PBXGroup;
+			children = (
+				8C24D4B91920C5610091C044 /* ITHSAppDelegate.h */,
+				8C24D4BA1920C5610091C044 /* ITHSAppDelegate.m */,
+				8C24D4BC1920C5610091C044 /* Main.storyboard */,
+				8C24D4BF1920C5610091C044 /* ITHSViewController.h */,
+				8C24D4C01920C5610091C044 /* ITHSViewController.m */,
+				8C24D4C21920C5610091C044 /* Images.xcassets */,
+				8C24D4B11920C5610091C044 /* Supporting Files */,
+			);
+			path = Postnr;
+			sourceTree = "<group>";
+		};
+		8C24D4B11920C5610091C044 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C24D4B21920C5610091C044 /* Postnr-Info.plist */,
+				8C24D4B31920C5610091C044 /* InfoPlist.strings */,
+				8C24D4B61920C5610091C044 /* main.m */,
+				8C24D4B81920C5610091C044 /* Postnr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C24D4CF1920C5610091C044 /* PostnrTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C24D4D51920C5610091C044 /* PostnrTests.m */,
+				8C24D4D01920C5610091C044 /* Supporting Files */,
+			);
+			path = PostnrTests;
+			sourceTree = "<group>";
+		};
+		8C24D4D01920C5610091C044 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C24D4D11920C5610091C044 /* PostnrTests-Info.plist */,
+				8C24D4D21920C5610091C044 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C24D4A61920C5610091C044 /* Postnr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C24D4D91920C5610091C044 /* Build configuration list for PBXNativeTarget "Postnr" */;
+			buildPhases = (
+				8C24D4A31920C5610091C044 /* Sources */,
+				8C24D4A41920C5610091C044 /* Frameworks */,
+				8C24D4A51920C5610091C044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Postnr;
+			productName = Postnr;
+			productReference = 8C24D4A71920C5610091C044 /* Postnr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C24D4C71920C5610091C044 /* PostnrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C24D4DC1920C5610091C044 /* Build configuration list for PBXNativeTarget "PostnrTests" */;
+			buildPhases = (
+				8C24D4C41920C5610091C044 /* Sources */,
+				8C24D4C51920C5610091C044 /* Frameworks */,
+				8C24D4C61920C5610091C044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C24D4CE1920C5610091C044 /* PBXTargetDependency */,
+			);
+			name = PostnrTests;
+			productName = PostnrTests;
+			productReference = 8C24D4C81920C5610091C044 /* PostnrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C24D49F1920C5610091C044 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ITHS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jyrki Rajala";
+				TargetAttributes = {
+					8C24D4C71920C5610091C044 = {
+						TestTargetID = 8C24D4A61920C5610091C044;
+					};
+				};
+			};
+			buildConfigurationList = 8C24D4A21920C5610091C044 /* Build configuration list for PBXProject "Postnr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C24D49E1920C5610091C044;
+			productRefGroup = 8C24D4A81920C5610091C044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C24D4A61920C5610091C044 /* Postnr */,
+				8C24D4C71920C5610091C044 /* PostnrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C24D4A51920C5610091C044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C24D4C31920C5610091C044 /* Images.xcassets in Resources */,
+				8C24D4B51920C5610091C044 /* InfoPlist.strings in Resources */,
+				8C24D4BE1920C5610091C044 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C24D4C61920C5610091C044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C24D4D41920C5610091C044 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C24D4A31920C5610091C044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C24D4BB1920C5610091C044 /* ITHSAppDelegate.m in Sources */,
+				8C24D4C11920C5610091C044 /* ITHSViewController.m in Sources */,
+				8C24D4B71920C5610091C044 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C24D4C41920C5610091C044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C24D4D61920C5610091C044 /* PostnrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C24D4CE1920C5610091C044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C24D4A61920C5610091C044 /* Postnr */;
+			targetProxy = 8C24D4CD1920C5610091C044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C24D4B31920C5610091C044 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C24D4B41920C5610091C044 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8C24D4BC1920C5610091C044 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C24D4BD1920C5610091C044 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C24D4D21920C5610091C044 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C24D4D31920C5610091C044 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C24D4D71920C5610091C044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C24D4D81920C5610091C044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C24D4DA1920C5610091C044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Postnr/Postnr-Prefix.pch";
+				INFOPLIST_FILE = "Postnr/Postnr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8C24D4DB1920C5610091C044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Postnr/Postnr-Prefix.pch";
+				INFOPLIST_FILE = "Postnr/Postnr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8C24D4DD1920C5610091C044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Postnr.app/Postnr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Postnr/Postnr-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PostnrTests/PostnrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8C24D4DE1920C5610091C044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Postnr.app/Postnr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Postnr/Postnr-Prefix.pch";
+				INFOPLIST_FILE = "PostnrTests/PostnrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C24D4A21920C5610091C044 /* Build configuration list for PBXProject "Postnr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C24D4D71920C5610091C044 /* Debug */,
+				8C24D4D81920C5610091C044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C24D4D91920C5610091C044 /* Build configuration list for PBXNativeTarget "Postnr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C24D4DA1920C5610091C044 /* Debug */,
+				8C24D4DB1920C5610091C044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8C24D4DC1920C5610091C044 /* Build configuration list for PBXNativeTarget "PostnrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C24D4DD1920C5610091C044 /* Debug */,
+				8C24D4DE1920C5610091C044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C24D49F1920C5610091C044 /* Project object */;
+}
