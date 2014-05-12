@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Result" translatesAutoresizingMaskIntoConstraints="NO" id="B9R-Na-Dyj" userLabel="ResultTextView">
-                                <rect key="frame" x="20" y="96" width="280" height="364"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Result" translatesAutoresizingMaskIntoConstraints="NO" id="B9R-Na-Dyj" userLabel="ResultTextView">
+                                <rect key="frame" x="20" y="96" width="280" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -42,22 +42,27 @@
                                     <action selector="SearchBtnClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="J18-eZ-PyD"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ddU-Vi-XId">
+                                <rect key="frame" x="20" y="168" width="280" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BxQ-lo-zIv" firstAttribute="top" secondItem="nIP-Cu-sHG" secondAttribute="bottom" constant="8" symbolic="YES" id="OUh-GZ-5ed"/>
-                            <constraint firstItem="nIP-Cu-sHG" firstAttribute="trailing" secondItem="B9R-Na-Dyj" secondAttribute="trailing" id="OlL-vu-pGP"/>
-                            <constraint firstItem="nIP-Cu-sHG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="QvQ-aV-ee5"/>
-                            <constraint firstItem="BxQ-lo-zIv" firstAttribute="centerX" secondItem="nIP-Cu-sHG" secondAttribute="centerX" id="UCG-1X-YlJ"/>
-                            <constraint firstItem="nIP-Cu-sHG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="XOK-jk-OIA"/>
-                            <constraint firstItem="B9R-Na-Dyj" firstAttribute="leading" secondItem="nIP-Cu-sHG" secondAttribute="leading" id="aUt-Ge-2NM"/>
-                            <constraint firstAttribute="bottom" secondItem="B9R-Na-Dyj" secondAttribute="bottom" constant="20" symbolic="YES" id="bOc-mX-2fh"/>
-                            <constraint firstAttribute="trailing" secondItem="nIP-Cu-sHG" secondAttribute="trailing" constant="20" symbolic="YES" id="hF3-Tk-4fO"/>
-                            <constraint firstItem="B9R-Na-Dyj" firstAttribute="top" secondItem="BxQ-lo-zIv" secondAttribute="bottom" constant="8" symbolic="YES" id="kdX-jM-3iu"/>
+                            <constraint firstItem="B9R-Na-Dyj" firstAttribute="top" secondItem="BxQ-lo-zIv" secondAttribute="bottom" constant="8" symbolic="YES" id="0is-Ql-6eO"/>
+                            <constraint firstItem="BxQ-lo-zIv" firstAttribute="top" secondItem="nIP-Cu-sHG" secondAttribute="bottom" constant="8" symbolic="YES" id="B4I-q1-Awm"/>
+                            <constraint firstAttribute="bottom" secondItem="B9R-Na-Dyj" secondAttribute="bottom" constant="20" symbolic="YES" id="Qyd-r1-TW6"/>
+                            <constraint firstItem="nIP-Cu-sHG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="UPM-o1-4ht"/>
+                            <constraint firstItem="B9R-Na-Dyj" firstAttribute="trailing" secondItem="nIP-Cu-sHG" secondAttribute="trailing" id="XTL-zL-4xt"/>
+                            <constraint firstItem="nIP-Cu-sHG" firstAttribute="centerX" secondItem="BxQ-lo-zIv" secondAttribute="centerX" id="ah5-zQ-Oc7"/>
+                            <constraint firstItem="nIP-Cu-sHG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="fAL-Mc-Jlq"/>
+                            <constraint firstAttribute="trailing" secondItem="nIP-Cu-sHG" secondAttribute="trailing" constant="20" symbolic="YES" id="l1u-NU-gSQ"/>
+                            <constraint firstItem="nIP-Cu-sHG" firstAttribute="leading" secondItem="B9R-Na-Dyj" secondAttribute="leading" id="pFC-Sm-r6g"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="SearchField" destination="nIP-Cu-sHG" id="yG0-Bb-dIc"/>
+                        <outlet property="mapView" destination="ddU-Vi-XId" id="qUF-rY-G30"/>
                         <outlet property="resultView" destination="B9R-Na-Dyj" id="Pfk-YK-HZf"/>
                     </connections>
                 </viewController>

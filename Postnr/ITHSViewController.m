@@ -28,10 +28,14 @@
  */
 
 #import "ITHSViewController.h"
+#import <MapKit/MapKit.h>
+
+#define METERS_PER_MILE 1609.344
 
 @interface ITHSViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *resultView;
 @property (weak, nonatomic) IBOutlet UITextField *SearchField;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -45,6 +49,21 @@
 	[self.SearchField addTarget:self.SearchField
 						 action:@selector(resignFirstResponder)
 			   forControlEvents:UIControlEventEditingDidEndOnExit];
+	
+
+	// 1
+    CLLocationCoordinate2D zoomLocation;
+    zoomLocation.latitude = 57.70043518;
+    zoomLocation.longitude= 11.95448232;
+	
+    // 2
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+	
+    // 3
+    [self.mapView setRegion:viewRegion animated:YES];
+	
+	self.mapView.mapType = MKMapTypeSatellite;
+	
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -84,6 +103,17 @@
 
 										  if ([json[@"status_code"] intValue] == 100 ) {
 											  self.resultView.text = json[@"results"][0][@"address"];
+											  // 1
+											  CLLocationCoordinate2D zoomLocation;
+											  zoomLocation.latitude = [json[@"results"][0][@"lat"] floatValue];
+											  zoomLocation.longitude= [json[@"results"][0][@"lng"] floatValue];
+											  
+											  // 2
+											  MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.2*METERS_PER_MILE, 0.2*METERS_PER_MILE);
+											  
+											  // 3
+											  [self.mapView setRegion:viewRegion animated:YES];
+
 										  } else {
 											  self.resultView.text = json[@"status_message"];
 										  }
